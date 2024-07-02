@@ -1,0 +1,13 @@
+.todo-search{
+    width: 420px;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 25px;
+    border: solid 2px gray;
+    margin-bottom: 40px;
+}
+
+.search-icon {
+    width: 10px;
+    height: 10px;
+}

@@ -1,8 +1,8 @@
-
+import './css/TodoContainer.css'
 
 function TodoContainer({ children }) {
     return (
-        <ul>
+        <ul className='ul-container'>
             {children}
         </ul>
     )

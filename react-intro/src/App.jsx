@@ -6,10 +6,10 @@ import TodoContainer from './TodoContainer'
 import TodoItem from './TodoItem'
 
 const arrayTodos = [
-  {todo: 'Llorar con la llorona', completed: true},
-  {todo: 'Hola mundo', completed: false},
-  {todo: 'Cortar cebolla', completed: true},
-  {todo: 'Hacer la cena', completed: false},
+  {text: 'Llorar con la llorona', completed: true},
+  {text: 'Hola mundo', completed: false},
+  {text: 'Cortar cebolla', completed: false},
+  {text: 'Hacer la cena', completed: true},
 ]
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
       <Search />
       <TodoContainer>
             {arrayTodos.map(todo => (
-                <TodoItem todo={todo}/>
+                <TodoItem key={todo.text} text={todo.text} completed={todo.completed}/>
             ))}
       </TodoContainer>
     </>
